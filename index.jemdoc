@@ -1,0 +1,65 @@
+# jemdoc:analytics{UA-35061922-2}
+= Chang-han Rhee
+
+~~~
+{}{img_left}{prof.jpg}{Under Construction}{200px}{200px}
+#{index2.html}
+Postdoctoral Fellow\n
+[http://isye.gatech.edu/ Industrial & Systems Engineering] and [http://bme.gatech.edu/ Biomedical Engineering]\n
+[http://gatech.edu/ Georgia Institute of Technology]\n
+
+Supervisor: [http://enluzhou.gatech.edu/ Enlu Zhou] ([http://isye.gatech.edu/ Industrial & Systems Engineering]),  [http://pengqiu.gatech.edu/ Peng Qiu] ([http://bme.gatech.edu/ Biomedical Engineering])\n
+
+[cv.pdf CV]\n
+~~~
+
+
+
+== Contact
+ISyE Main Bldg. Room 414 755 Ferst Drive NW, Atlanta, GA 30332-0205, USA\n
+#Huang Engineering Center, 053J, Stanford, CA 94305\n
+[rhee@gatech.edu]\n
+#+1 650 799 3356\n
+[http://rhee.gatech.edu/ http:\/\/rhee.gatech.edu\/]\n
+
+
+== Research
+- Simulation and Statistical Inference for Stochastic Differential Equations (SDEs), Computational Finance
+- Markov chain Monte Carlo, Exact Estimation
+- Sensitivity Analysis, Gradient Estimation
+- Stochastic Control
+- Experimental Design
+- Healthcare Delivery
+
+
+== Education
+- Ph.D., Computational and Mathematical Engineering, [http://stanford.edu Stanford University]#, Sept 2013 
+- M.S., Computational and Mathematical Engineering, [http://stanford.edu Stanford University]#, Sept 2013
+- B.S., Mathematics and Computer Science, [http://snu.ac.kr Seoul National University]#, Aug 2006 
+
+
+== Publication
+:{[papers/RheeGlynn13a.pdf Unbiased Estimation with Square Root Convergence for SDE Models]}
+	/with P. W. Glynn/\n
+	To appear in /Operations Research/. *2013 George Nicholson Student Paper Competition Finalist*. 
+:{[papers/GlynnRhee14a.pdf Exact Estimation for Equilibrium of Markov Chains]}
+	/with P. W. Glynn/\n
+	/Journal of Applied Probability,/ 51A:377-389, (2014).
+:{[papers/RheeGlynn12a.pdf A New Approach to Unbiased Estimation for SDE's]}
+	/with P. W. Glynn/\n
+	/2012 Winter Simulation Conference,/ (2012). *Best Student Paper Award (MS/OR focused)*. 
+:{[papers/RheeZhouQiu14a.pdf An Iterative Algorithm for Sampling from Manifolds]}
+	/with E. Zhou and P. Qiu /\n
+	/2014 Winter Simulation Conference,/ (2014). 
+:{[http://rhee.gatech.edu/ Lyapunov conditions for differentiability of Markov chain expectations: the absolutely continuous case]}
+	/with P. W. Glynn/\n
+	Working Paper.
+:{[http://rhee.gatech.edu/ Lyapunov conditions for differentiability of Markov chain expectations: the contracting case]}
+	/with P. W. Glynn/\n
+	Working Paper.
+:{[http://rhee.gatech.edu/ Experimental design for complex systems biology models]} 
+	/with E. Zhou and P. Qiu./\n 
+	Working Paper.
+
+
+
