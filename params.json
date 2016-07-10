@@ -1,0 +1,6 @@
+{
+  "name": "Chrhee.GitHub.io",
+  "tagline": "research website",
+  "body": "@@ -0,0 +1,7 @@\r\n<!DOCTYPE html>\r\n<html>\r\n<body>\r\n<h1>Hello World</h1>\r\n<p>This website is hosted with GitHub Pages.</p>\r\n</body>\r\n</html> \r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
