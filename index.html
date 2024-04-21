@@ -45,25 +45,40 @@ Email: <a href="mailto:chang-han.rhee@northwestern.edu" target=&ldquo;blank&rdqu
 </li>
 <li><p>Experimental Design</p>
 </li>
-<li><p>Machine Learning Theory</p>
+<li><p>Deep Learning Theory</p>
 </li>
 </ul>
-<h2>On My Recent Papers on Heavy-Tailed Rare Event Analysis <a href="slides.pdf" target=&ldquo;blank&rdquo;>(slides)</a></h2>
-<p>Although rare, rare events matter. 
-For example, rare catastrophic events&#8201;&mdash;&#8201;such as large scale black out, market crash, and earthquake&#8201;&mdash;&#8201;have major impacts on society. 
-Moreover, the need for understanding and controling (less dramatic) rare events frequently arises in many problems in statistics, science, and engineering. 
-The theory of large deviations has a long and successful history in providing systematic tools for understanding rare events. 
-(Varadhan won Abel Prize in 2007 for his contributions to the large deviations theory!) 
-However, the classical large deviations theory often falls short when the underlying uncertainties are heavy-tailed.
-This is a serious problem, since heavy tails are observed in many man-made systems (e.g., degree distribution in social network, financial loss, CPU requirement and file size in computer systems, size of power outage) as well as natural phenomena (e.g., earthquake, flood). 
-Moreover, in many applications it has been observed that there is a structural difference in the way system-wide rare events arise when the underlying uncertainties are heavy-tailed. 
-Roughly speaking, in light-tailed settings, the system-wide rare events arise because <b>everything goes wrong a little bit</b> (conspiracy principle), whereas in heavy-tailed settings, the system-wide rare events arise because <b>only a few things go wrong, but they go terribly wrong</b> (catastrophe principle). 
-Due to such a fundamental difference, as well as the ubiquitous presence of the heavy-tailed distributions in modern engineering systems, a comprehensive theory of large deviations for heavy-tailed rare events has long been called for. 
-While the extreme value theory community has made impressive progress in understanding the catastrophe principle over the last couple of decades, most of the literature has been focused on model-specific results or results pertaining to rare events that are caused by a single extreme behavior.
-My recent papers [<a href="papers/RheeBlanchetZwart16a.pdf" target=&ldquo;blank&rdquo;>1</a>, <a href="papers/BazhbaBlanchetRheeZwart17a.pdf" target=&ldquo;blank&rdquo;>2</a>, <a href="papers/ChenBlanchetRheeZwart17a.pdf" target=&ldquo;blank&rdquo;>3</a>] establish heavy-tailed large deviations theory and rigorously characterize the catastrophe principle for fundamental stochastic processes such as Levy processes and random walks with heavy-tailed increments; 
-in particualr, our theory fully characterizes the heavy-tailed rare events that require more than one single extreme behavior. 
-The new theory facilitates understanding of a wide range of rare events that arise in applications. 
-In particular, we were able to solve long standing open problems in simulation and queueing theory&#8201;&mdash;&#8201;i.e., designing the universal and strongly efficient rare-event simulation algorithm [<a href="papers/ChenBlanchetRheeZwart17a.pdf" target=&ldquo;blank&rdquo;>3</a>] and identifying the queue length asymptotics of multiple server queue with heavy-tailed service times [<a href="papers/BazhbaBlanchetRheeZwart18a.pdf" target=&ldquo;blank&rdquo;>2</a>].</p>
+<h2>On Heavy-Tails and Global Dynamics of SGD in Deep Learning </h2>
+<p>A strange and beautiful mathematical structure called &ldquo;heavy tail&rdquo; underlies seemingly disparate rare events such as the recent global pandemic, the 2012 blackout in India, and the 2007 financial crisis. In fact, the list of examples goes on far beyond literal catastrophes, and heavy tails are pervasive in large-scale complex systems and modern algorithms. 
+Heavy tails provide mathematical models for extreme variability, and under the presence of heavy tails, high-impact rare events are guaranteed to happen eventually. 
+Understanding how they will happen allows us to design resilient systems and control (or even utilize) the impact they inflict.
+A particularly well-known and simple manifestation of heavy tails is the “80-20 rule”—e.g., the richest 20% of the population control 80% of the wealth—whose variations are repeatedly discovered in a wide variety of application areas.
+One of the most recent and surprising discovery of heavy tails emerged in deep neural networks.</p>
+<p>The unprecedented empirical success of deep neural networks in modern AI tasks is often attributed to the stochastic gradient descent (SGD) algorithm’s mysterious ability to avoid sharp local minima in the loss landscape. 
+Recently, heavy-tailed SGD has attracted significant attention for its ability to escape sharp local minima through a single big jump, and hence, within a realistic training horizon. 
+In practice, however, when SGD exhibits such behaviors, practitioners adopt truncated variations of SGD to temper such movements. 
+At first glance, this truncation scheme—known as gradient clipping—appears to effectively eliminate heavy tails from the SGDs&rsquo; dynamics, obliterating the aforementioned effects. 
+Curiously, however, such modifications lead to the opposite of what a naive intuition predicts: heavy-tailed SGDs with gradient clipping almost completely avoid sharp local minima. </p>
+<p>To unravel this mystery and potentially further enhance SGD's ability to find flat minima, it is imperative to go beyond the traditional local convergence analysis and acquire a comprehensive understanding of SGDs&rsquo; global dynamics within complex non-convex loss landscapes. 
+My research with <a href="https://joshwang0322.github.io/" target=&ldquo;blank&rdquo;>Xingyu Wang</a> provides <b>systematic tools for characterizing the global dynamics of such variations of SGDs</b> through the lens of heavy-tailed large deviations and metastability analysis.</p>
+<p>I recently presented our findings in a lecture series [<a href="https://www.newton.ac.uk/seminar/42468" target=&ldquo;blank&rdquo;>1</a>, <a href="https://www.newton.ac.uk/seminar/42490" target=&ldquo;blank&rdquo;>2</a>, <a href="https://www.newton.ac.uk/seminar/42491" target=&ldquo;blank&rdquo;>3</a>, <a href="https://www.newton.ac.uk/seminar/42492" target=&ldquo;blank&rdquo;>4</a>]
+in an <a href="https://www.newton.ac.uk/event/tml/" target=&ldquo;blank&rdquo;>Isaac Newton Institute Satellite Programme on heavy-tails in machine learning</a> at the Alan Turing Institute. 
+Lecture videos and slides are available in the above links. 
+The <a href="https://www.newton.ac.uk/seminar/42468" target=&ldquo;blank&rdquo;>first lecture</a> gives an overview of heavy-tailed large deviations approach to the characterization of global dynamics of SGD. 
+The subsequent lectures explain the mathematical foundations in more details and discuss related topics.
+Please also see our <a href="papers/WangOhRhee22a.pdf" target=&ldquo;blank&rdquo;>conference paper</a> for the high-level description of the phenomena, and a follow-up <a href="papers/WangRhee23a.pdf" target=&ldquo;blank&rdquo;>journal paper</a> for a more streamlined development of the mathematical foundation behind them. 
+The preprints of the these papers were recognized with the <i>2022 IEMS Nemhauser Best Student Paper Prize</i> and the 2nd Place in the <i>2023 INFORMS George Nicholson Student Paper Competition</i>, respectively.</p>
+<p>In addition to providing insights into the global dynamics of heavy-tailed SGDs, this line of research also contributes to the advances in the general mathematical machinery for heavy-tailed dynamical systems:</p>
+<ul>
+<li><p>We proposed a new locally uniform formulation of heavy-tailed large deviations that paves the way to the analysis of global dynamics of SGD. </p>
+</li>
+<li><p>To facilitate this, we developed a uniform version of M-convergence theory.</p>
+</li>
+<li><p>Building on these developments, we devised a streamlined framework for lifting the new large deviations bounds to a sharp local stability analysis.</p>
+</li>
+<li><p>Subsequently we developed further tools to lift the local stability analysis to the sample-path level convergence analysis of the scaled SGD. </p>
+</li>
+</ul>
 <h2>Education</h2>
 <ul>
 <li><p>Ph.D., Computational and Mathematical Engineering, <a href="http://stanford.edu" target=&ldquo;blank&rdquo;>Stanford University</a></p>
@@ -75,13 +90,15 @@ In particular, we were able to solve long standing open problems in simulation a
 </ul>
 <h2>Honors &amp; Awards</h2>
 <ul>
-<li><p>NSF CAREER Award, 2022</p>
+<li><p>INFORMS George Nicholson Student Paper Competition 2nd Place (as advisor), 2023</p>
+</li>
+<li><p>NSF CAREER Award, 2022&ndash;2027</p>
 </li>
 <li><p>INFORMS Simulation Society Outstanding Simulation Publication Award, 2016</p>
 </li>
-<li><p>George Nicholson Student Paper Competition Finalist, 2013</p>
+<li><p>INFORMS George Nicholson Student Paper Competition Finalist, 2013</p>
 </li>
-<li><p>Best Student Paper Award (MS/OR focused), Winter Simulation Conference, 2012</p>
+<li><p>Winter Simulation Conference Best Student Paper Award (MS/OR), 2012</p>
 </li>
 <li><p>Samsung Fellowship, 2008–2012</p>
 </li>
@@ -90,80 +107,89 @@ In particular, we were able to solve long standing open problems in simulation a
 <ul>
 <li><p>Jeffrey Wang (PhD at Northwestern IEMS)</p>
 </li>
-<li><p>Xingyu Wang (PhD at Northwetern IEMS)</p>
+<li><p>Xingyu Wang (PhD at Northwestern IEMS)</p>
 </li>
 <li><p>Zhe Su (PhD at Northwestern IEMS)</p>
 </li>
 <li><p>Jingyi Zhao (MS at Northwestern ESAM): graduated in March 2020</p>
 </li>
-<li><p>Mihail Bazhba (PhD at CWI Stochastics): co-supervised with Bert Zwart; scheduled to defend in May 2021</p>
+<li><p>Mihail Bazhba (PhD at CWI Stochastics): co-supervised with Bert Zwart; defended in May 2021</p>
 </li>
 <li><p>Bohan Chen (PhD at CWI Stochastics): co-supervised with Bert Zwart; defended in December 2019</p>
 </li>
 </ul>
 <h2>Journal Papers</h2>
 <dl>
+<dt><a href="papers/BazhbaBlanchetRheeZwart20.pdf" target=&ldquo;blank&rdquo;>Sample-path large deviations for unbounded additive functionals of the reflected random walk</a></dt>
+<dd><p>
+<i>with M. Bazhba, J. Blanchet, B. Zwart</i><br />
+To appear in <i>Mathematics of Operations Research</i>, 
+arXiv:2003.14381</p></dd>
+</dl>
+<dl>
+<dt><a href="papers/ChenRheeZwart23a.pdf" target=&ldquo;blank&rdquo;>Sample-path large deviations for a class of heavy-tailed Markov additive processes</a></dt>
+<dd><p>
+<i>with B. Chen and B. Zwart</i><br />
+<i>Electronic Journal of Probability</i>, 29: 1&ndash;44, 2024.
+</p></dd>
+</dl>
+<dl>
 <dt><a href="papers/RheeGlynn23a.pdf" target=&ldquo;blank&rdquo;>Lyapunov conditions for differentiability of Markov chain expectations</a></dt>
 <dd><p>
 <i>with P. Glynn</i><br />
-To appear in <i>Mathematics of Operations Research</i></p></dd>
+<i>Mathematics of Operations Research</i>, 48(4): 2029&ndash;2042, 2022.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/BazhbaRheeZwart22a.pdf" target=&ldquo;blank&rdquo;>Large deviations for stochastic fluid networks with Weibullian tails</a></dt>
 <dd><p>
 <i>with M. Bazhba, B. Zwart</i><br />
-Special issue of <i>Queueing Systems</i> in honor of Masakiyo Miyazawa, 102: 25&ndash;52, (2022)</p></dd>
+Special issue of <i>Queueing Systems</i> in honor of Masakiyo Miyazawa, 102: 25&ndash;52, 2022.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/BazhbaBlanchetRheeZwart20a.pdf" target=&ldquo;blank&rdquo;>Sample-path large deviations for Levy processes and random walks with Weibull increments</a></dt>
 <dd><p>
 <i>with M. Bazhba, J. Blanchet, and B. Zwart</i><br />	
-<i>Annals of Applied Probability</i>, 30(6): 2695&ndash;2739, (2020)</p></dd>
+<i>Annals of Applied Probability</i>, 30(6): 2695&ndash;2739, 2020.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/RheeBlanchetZwart19.pdf" target=&ldquo;blank&rdquo;>Sample-path large deviations for Levy processes and random walks with regularly varying increments</a></dt>
 <dd><p>
 <i>with J. Blanchet and B. Zwart</i><br />
-<i>Annals of Probability</i>, 47(6): 3551-3605, (2019)</p></dd>
+<i>Annals of Probability</i>, 47(6): 3551-3605, 2019.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/ChenBlanchetRheeZwart19.pdf" target=&ldquo;blank&rdquo;>Efficient rare-event simulation for multiple jump events in regularly varying random walks and compound Poisson processes</a></dt>
 <dd><p>
 <i>with B. Chen, J. Blanchet, and B. Zwart</i><br />	
-<i>Mathematics of Operations Research</i>, 44(3): 919-942, (2019)</p></dd>
+<i>Mathematics of Operations Research</i>, 44(3): 919-942, 2019.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/BazhbaBlanchetRheeZwart19a.pdf" target=&ldquo;blank&rdquo;>Queue length asymptotics for the multiple server queue with heavy-tailed Weibull service times</a></dt>
 <dd><p>
 <i>with M. Bazhba, J. Blanchet, and B. Zwart</i><br />
-<i>Queueing Systems</i>, 93(3&ndash;4): 195-226, (2019)</p></dd>
+<i>Queueing Systems</i>, 93(3&ndash;4): 195-226, 2019.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/ChenRheeZwart16a.pdf" target=&ldquo;blank&rdquo;>Importance sampling of heavy-tailed iterated random functions</a></dt>
 <dd><p>
 <i>with B. Chen and B. Zwart</i><br />
-<i>Advances in Applied Probability</i>, 50(3): 805-832. (2018)</p></dd>
+<i>Advances in Applied Probability</i>, 50(3): 805-832. 2018.</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/RheeGlynn13a.pdf" target=&ldquo;blank&rdquo;>Unbiased estimation with square root convergence for SDE models</a></dt>
 <dd><p>
 <i>with P. Glynn</i><br />
-<i>Operations Research,</i> 63(5): 1026–1043. (2015) <br />
-<b>2016 INFORMS Simulation Society Outstanding Simulation Publication Award.</b><br />
-</p></dd>
+<i>Operations Research,</i> 63(5): 1026–1043, 2015. <br />
+<b>2016 INFORMS Simulation Society Outstanding Simulation Publication Award</b><br />
+<b>2013 INFORMS 	George Nicholson Student Paper Competition Finalist</b></p></dd>
+</dl>
+<dl>
 <dt><a href="papers/GlynnRhee14a.pdf" target=&ldquo;blank&rdquo;>Exact estimation for equilibrium of Markov chains</a></dt>
 <dd><p>
 <i>with P. Glynn</i><br />
-<i>Journal of Applied Probability (Special Jubilee Issue),</i> 51A:377-389, (2014)</p></dd>
+<i>Journal of Applied Probability (Special Jubilee Issue),</i> 51A:377-389, 2014.</p></dd>
 </dl>
 <h2>Submitted Papers</h2>
-<dl>
-<dt><a href="papers/ChenRheeZwart23a.pdf" target=&ldquo;blank&rdquo;>Sample-path large deviations for a class of heavy-tailed Markov additive processes</a></dt>
-<dd><p>
-<i>with B. Chen and B. Zwart</i><br />
-
-arXiv:2010.10751</p></dd>
-</dl>
 <dl>
 <dt><a href="papers/RheeZhouQiu23a.pdf" target=&ldquo;blank&rdquo;>Space filling design for non-linear models</a></dt>
 <dd><p>
@@ -171,51 +197,54 @@ arXiv:2010.10751</p></dd>
 
 arXiv:1710.11616	</p></dd>
 </dl>
-<dl>
-<dt><a href="papers/BazhbaBlanchetRheeZwart20.pdf" target=&ldquo;blank&rdquo;>Sample-path large deviations for unbounded additive functionals of the reflected random walk</a></dt>
-<dd><p>
-<i>with M. Bazhba, J. Blanchet, B. Zwart</i><br />
-
-arXiv:2003.14381</p></dd>
-</dl>
 <h2>Conference Papers</h2>
 <dl>
 <dt><a href="papers/WangRhee23b.pdf" target=&ldquo;blank&rdquo;>Importance sampling strategy for heavy-tailed systems with catastrophe principle</a></dt>
 <dd><p>
 <i>with X. Wang</i><br /> 
-<i>2023 Winter Simulation Conference,</i> (2023)</p></dd>
+<i>2023 Winter Simulation Conference,</i> Advanced Tutorial (2023)</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/WangOhRhee22a.pdf" target=&ldquo;blank&rdquo;>Eliminating sharp minima from SGD with truncated heavy tails</a></dt>
 <dd><p>
 <i>with X. Wang and S. Oh</i><br />
-<i>International Conference on Learning Representations,</i> (2022)</p></dd>
+<i>International Conference on Learning Representations</i> (2022)<br />
+<b>2022 IEMS Nemhauser Best Student Paper Prize</b></p></dd>
 </dl>
 <dl>
 <dt><a href="papers/WangRhee20.pdf" target=&ldquo;blank&rdquo;>Rare-event simulation for multiple jump events in heavy-tailed Levy processes with infinite activities</a></dt>
 <dd><p>
 <i>with X. Wang</i><br /> 
-<i>2020 Winter Simulation Conference,</i> (2020)</p></dd>
+<i>2020 Winter Simulation Conference</i> (2020)</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/RheeZhouQiu14a.pdf" target=&ldquo;blank&rdquo;>An iterative algorithm for sampling from manifolds</a></dt>
 <dd><p>
 <i>with E. Zhou and P. Qiu </i><br />
-<i>2014 Winter Simulation Conference,</i> (2014)</p></dd>
+<i>2014 Winter Simulation Conference</i> (2014)</p></dd>
 </dl>
 <dl>
 <dt><a href="papers/RheeGlynn12a.pdf" target=&ldquo;blank&rdquo;>A new approach to unbiased estimation for SDE's</a></dt>
 <dd><p>
 <i>with P. Glynn</i><br />
-<i>2012 Winter Simulation Conference,</i> (2012)<br /> 
-<b>Best Student Paper Award (MS/OR focused)</b></p></dd>
+<i>2012 Winter Simulation Conference</i> (2012)<br /> 
+<b>2012 WSC Best Student Paper Award (MS/OR)</b></p></dd>
 </dl>
 <h2>Working Papers</h2>
 <dl>
 <dt><a href="papers/WangRhee23a.pdf" target=&ldquo;blank&rdquo;>Large deviations and metastability analysis for heavy-tailed dynamical systems</a></dt>
 <dd><p>
 <i>with X. Wang</i><br />
-</p></dd>
+arXiv:2307.03479<br />
+<b>2023 INFORMS George Nicholson Student Paper Competition 2nd Place</b></p></dd>
+</dl>
+<dl>
+<dt><a href="https://arxiv.org/pdf/2309.13820.pdf" target=&ldquo;blank&rdquo;>Strongly Efficient Rare-Event Simulation for Multiple-Jump
+Events in Regularly Varying Levy Processes with Infinite
+Activities</a></dt>
+<dd><p>
+<i>with X. Wang</i><br />
+arXiv:2309.13820</p></dd>
 </dl>
 <dl>
 <dt>On tail asymptotics for stationary distributions of heavy-tailed processes</dt>
@@ -232,11 +261,6 @@ arXiv:2003.14381</p></dd>
 <dt>On queue length asymptotics for queueing systems with lognormal service times</dt>
 <dd><p>
 <i>with Z. Su</i><br /></p></dd>
-</dl>
-<dl>
-<dt>On strongly efficient rare-event simulation for multiple jump events in regularly varying Levy processes with infinite activities</dt>
-<dd><p>
-<i>with X. Wang</i><br /></p></dd>
 </dl>
 <dl>
 <dt>On unbiased estimation for Markov chain expectations and Poisson equations</dt>
@@ -261,7 +285,7 @@ arXiv:2003.14381</p></dd>
 </dl>
 <div id="footer">
 <div id="footer-text">
-Page generated 2023-07-08 00:21:38 CEST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2024-04-21 08:58:41 CDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
